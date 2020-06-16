@@ -4,9 +4,10 @@ export const BLACK = "#000000";
 
 export const FILTER_DATA = [
   { id: 0, name: "Total", disabled: false },
-  { id: 1, name: "3 Meses", disabled: false },
-  { id: 2, name: "6 Meses", disabled: false },
+  { id: 1, name: "1 Mês", disabled: false },
+  { id: 2, name: "3 Meses", disabled: false },
   { id: 3, name: "1 Ano", disabled: false },
+  { id: 4, name: "2 Anos", disabled: false },
 ];
 
-export const MAP_TIME = [0, 3, 6, 12];
+export const MAP_TIME = [0, 1, 3, 12, 24];
