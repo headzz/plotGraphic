@@ -16,7 +16,6 @@ const useEdit = () => {
     const response = await fetchData();
     setConstantState(response);
     setState(response.data);
-    console.log("entrei");
   }, []);
   return {
     fillData,
