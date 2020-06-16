@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render Text content 1`] = `
+<p
+  class="sc-bdVaJa bCsVaL"
+  color="#000000"
+>
+  example text
+</p>
+`;
+
+exports[`render Text with another color 1`] = `
+<p
+  class="sc-bdVaJa jEGDka"
+  color="#F0F0F0"
+>
+  example text
+</p>
+`;
+
+exports[`render bold Text 1`] = `
+<p
+  class="sc-bdVaJa cvYyKL"
+  color="#000000"
+>
+  example text
+</p>
+`;
+
+exports[`render large Text 1`] = `
+<p
+  class="sc-bdVaJa kohSMR"
+  color="#000000"
+>
+  example text
+</p>
+`;

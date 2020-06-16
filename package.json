@@ -7,20 +7,28 @@
     "dev": "nodemon -w server.js server.js",
     "build": "next build",
     "start": "NODE_ENV=production node server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest "
   },
   "author": "pedro",
   "license": "ISC",
   "dependencies": {
+    "@testing-library/jest-dom": "^5.1.1",
+    "@testing-library/react": "^9.5.0",
     "axios": "^0.19.2",
     "express": "^4.17.1",
     "next": "^9.4.4",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "recharts": "^1.8.5",
-    "styled-components": "^5.1.1"
+    "styled-components": "4.4.1"
   },
   "devDependencies": {
-    "nodemon": "^2.0.4"
+    "@babel/preset-env": "^7.10.2",
+    "@babel/preset-react": "^7.10.1",
+    "babel-jest": "^24.9.0",
+    "babel-plugin-styled-components": "1.10.6",
+    "jest": "^24.9.0",
+    "nodemon": "^2.0.4",
+    "react-test-renderer": "^16.13.0"
   }
 }

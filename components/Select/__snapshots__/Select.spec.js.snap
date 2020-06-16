@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render Select content 1`] = `
+<select
+  class="sc-bdVaJa cTRebX"
+  data-testid="select"
+>
+  <option
+    tabindex="0"
+    value="0"
+  >
+    1 Ano
+  </option>
+  <option
+    tabindex="1"
+    value="1"
+  >
+    2 Anos
+  </option>
+</select>
+`;

@@ -18,7 +18,7 @@ const Select = ({ data, handleChange }) => {
   };
 
   return (
-    <SelectStyled onChange={onChange}>
+    <SelectStyled onChange={onChange} data-testid="select">
       {data.map((item) => {
         return (
           <option

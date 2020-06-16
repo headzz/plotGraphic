@@ -19,11 +19,12 @@ export const Calendar = ({ width, height, color }) => (
 
 Calendar.defaultProps = {
   color: "#000",
-  height: null,
+  height: "16px",
+  width: "16px",
 };
 
 Calendar.propTypes = {
-  width: PropTypes.string.isRequired,
   height: PropTypes.string,
   color: PropTypes.string,
+  width: PropTypes.string,
 };

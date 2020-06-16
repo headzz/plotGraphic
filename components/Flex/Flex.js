@@ -16,7 +16,12 @@ import React from "react";
 
 export const Flex = ({ center, children, right, spaceBetween }) => {
   return (
-    <FlexStyled center={center} right={right} spaceBetween={spaceBetween}>
+    <FlexStyled
+      data-testid="flex"
+      center={center}
+      right={right}
+      spaceBetween={spaceBetween}
+    >
       {children}
     </FlexStyled>
   );

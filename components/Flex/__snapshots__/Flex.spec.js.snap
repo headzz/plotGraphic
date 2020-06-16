@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render flex content 1`] = `
+<div
+  class="sc-bdVaJa gRiLhU"
+  data-testid="flex"
+>
+  <div>
+    1
+  </div>
+  <div>
+    2
+  </div>
+</div>
+`;
+
+exports[`render flex-content center 1`] = `
+<div
+  class="sc-bdVaJa hAvHhV"
+  data-testid="flex"
+>
+  <div>
+    1
+  </div>
+  <div>
+    2
+  </div>
+</div>
+`;
+
+exports[`render flex-content right 1`] = `
+<div
+  class="sc-bdVaJa gXLsGA"
+  data-testid="flex"
+>
+  <div>
+    1
+  </div>
+  <div>
+    2
+  </div>
+</div>
+`;
+
+exports[`render flex-content spaceBetween 1`] = `
+<div
+  class="sc-bdVaJa cqvdvB"
+  data-testid="flex"
+>
+  <div>
+    1
+  </div>
+  <div>
+    2
+  </div>
+</div>
+`;

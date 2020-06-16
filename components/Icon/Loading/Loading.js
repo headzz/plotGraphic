@@ -25,11 +25,12 @@ export const Loading = ({ width, height, color }) => (
 
 Loading.defaultProps = {
   color: "#000",
-  height: null,
+  height: "16px",
+  width: "16px",
 };
 
 Loading.propTypes = {
-  width: PropTypes.string.isRequired,
+  width: PropTypes.string,
   height: PropTypes.string,
   color: PropTypes.string,
 };
