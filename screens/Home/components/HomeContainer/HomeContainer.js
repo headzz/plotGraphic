@@ -2,7 +2,7 @@ import React, { useEffect, useState, useCallback, memo } from "react";
 import { Flex } from "@components/Flex";
 import Layout from "@components/Layout";
 import { Loading } from "@components/Icon/Loading";
-import { GREY_LVL_2, MAP_TIME } from "@configuration/constants";
+import { GREY_LVL_2 } from "@configuration/constants";
 import { dateFilter } from "@configuration/functions";
 import { FilterSection } from "@screens/Home/components/Filter";
 import { MessageSection } from "@screens/Home/components/Message";
@@ -25,22 +25,22 @@ import useHome from "./useHome";
 export const HomeContainer = memo(() => {
   const [chartData, setChartData] = useState({ error: false, data: [] });
   const store = useStateManagement();
-  const [newData, setNewData] = useState([]);
+  const [volatileData, setVolatileData] = useState([]);
 
   const { fillData } = useHome();
 
   useEffect(() => {
-    fillData(setChartData, setNewData);
+    fillData(setChartData, setVolatileData);
   }, [fillData]);
 
   useEffect(() => {
-    dateFilter(store.state.filterType, chartData, setNewData);
+    dateFilter(store.state.filterType, chartData, setVolatileData);
   }, [store.state.filterType]);
 
   return (
     <Layout.Body>
       {chartData.data.length === 0 ? (
-        <Flex center>
+        <Flex center data-testid="loader">
           <Loading width="64px" height="64px" color={GREY_LVL_2} />
         </Flex>
       ) : (
@@ -54,7 +54,7 @@ export const HomeContainer = memo(() => {
             <MessageSection filterType={store.state.filterType} />
           </Template.Message>
           <Template.Chart>
-            <ChartSection chartData={newData} />
+            <ChartSection chartData={volatileData} />
           </Template.Chart>
         </>
       )}

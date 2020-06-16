@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`render Select content 1`] = `
+exports[`behavior of select content 1`] = `
 <select
   class="sc-bdVaJa cTRebX"
   data-testid="select"
